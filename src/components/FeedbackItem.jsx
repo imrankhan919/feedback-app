@@ -1,8 +1,11 @@
+import {useContext} from 'react'
+import FeedbackContext from '../context/FeedbackContext'
+
 import {FaTimes} from 'react-icons/fa'
 import Card from "./shared/Card"
-function FeedbackItem({DatafromList , handleDelete}) {
+function FeedbackItem({DatafromList}) {
 
-
+  const {handleDelete} = useContext(FeedbackContext)
 
     // const handleClick = () =>{
     //  setRating((prev)=>{
